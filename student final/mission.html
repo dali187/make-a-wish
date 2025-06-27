@@ -1,0 +1,85 @@
+<!--Made by: Nathanael Shumake, -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+    <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+    <title>Missions Statement | Make a Wish</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This is where you can view our missions statment as Make a Wish.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
+</head>
+<body>
+    <a class="skip" href="#contact">Skip to Content</a>
+<nav class="mobile-nav">
+    <a class="icon" onclick="menu()">
+           <div id="icon">&#9776;</div>
+       </a>
+    <div id="nav-links">
+        <a class="link" href="index.html">Home</a>
+        <a class="link" href="help.html">How to Help</a>
+        <a class="link" href="donate.html">Donate</a>
+        <a class="link" href="options.html">See Options</a>
+        <a class="link" href="lives.html">Changed Lives</a>
+        <a class="link" href="contact.html">How to Apply</a>
+        <a class="link" href="mission.html">Our Mission</a>
+    </div>
+       
+</nav>    
+<header>
+    <img class="round" src="images/makeawish.jpg" alt="Make a wish logo.">
+</header>
+<nav class="tab-desk">
+    <a class="link" href="index.html">Home</a>
+    <a class="link" href="help.html">How to Help</a>
+    <a class="link" href="donate.html">Donate</a>
+    <a class="link" href="options.html">See Options</a>
+    <a class="link" href="lives.html">Changed Lives</a>
+    <a class="link" href="contact.html">How to Apply</a>
+    <a class="link" href="mission.html">Our Mission</a>
+</nav>
+<main>
+    <div>
+        <h1>Our Mission</h1>
+        <h2>Why do we do what we do?</h2>
+        <p>Here at Make a Wish there is nothing that puts a bigger smile on our faces than a smile on a childs face.
+            This is why our mission statement is "Together, we create life-changing wishes for children with critical illnesses." because it is how we provide smiles.</p>
+        <button id="toggleBtn">Show More</button>
+        <div id="extraContent" style="display: none;">
+            <p>We partner with volunteers, donors, and medical professionals to ensure each wish is crafted with care and purpose. Many children say their wish was a turning point in their treatment—and we’re honored to be part of that transformation.</p>
+        </div>
+        <img class="round" src="images/smile.jpg" alt="Child smiling">
+    </div>
+</main>
+<footer id="contact">
+    <div class="copyright"> 
+        <p>&copy; Copyright 2021. All Rights Reserved.</p> 
+        <a href="mailto:makeawish@gmail.com">makeawish@gmail.com</a>
+    <div class="social">
+        <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="Facebook logo"></a> 
+        <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="Twitter logo"></a> 
+    </div>
+    </div>     
+</footer>
+<script>
+  const toggleBtn = document.getElementById("toggleBtn");
+  const extraContent = document.getElementById("extraContent");
+
+  toggleBtn.addEventListener("click", () => {
+    if (extraContent.style.display === "none") {
+      extraContent.style.display = "block";
+      toggleBtn.textContent = "Show Less";
+    } else {
+      extraContent.style.display = "none";
+      toggleBtn.textContent = "Show More";
+    }
+  });
+</script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
